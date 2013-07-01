@@ -5,3 +5,22 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Product.delete_all
+#...
+Product.create(title: 'Programming Ruby 1.9 & 2.0', description:
+	%{<p>Ruby is the fastest growing and most exciting dynamic language out there.  
+		If you need to get working programs delivered fast, you should add
+		Ruby to your toolbox.</p>},
+		image_url: 'ruby.jpg',
+		price: 49.95)
+#...
+Product.create(title: 'CoffeeScript', description: %{<p>Coffeescript is a language
+		I don't yet understand, but would like to.  It is apparently very useful for
+		something to do with javascrip...or maybe CSS.</p>}, image_url: 'cs.jpg',
+		price: 39.99)
+#...
+Product.create(title: 'Rails Test Prescriptions', description: %{<p>This is a 
+	book that apparently covers some aspects of testing Rails, which is really, 
+	super important and worth your time to learn if you don't already know it.</p>},
+	image_url: 'rtp.jpg', price: 99.99)
+#...
